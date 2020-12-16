@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>logged in Successfully</h1>
+
+    <td>
+        username:
+        <p id="new1"></p>
+    </td>
+    <td>
+        email:
+        <p id="new2"></p>
+
+    </td>
+    <tr>
+        <td>
+            Password:
+            <p id="new3"></p>
+        </td>
+    </tr>
+<tr>
+    <td>
+       <a href="./index.html"><button >Logout</button></a> 
+    </td>
+</tr>
+</body>
+
+
+
+<script>
+    let u1=JSON.parse(localStorage.getItem("username"));
+    let u2=JSON.parse(localStorage.getItem("useremail"));
+    let u3=JSON.parse( localStorage.getItem("password"));
+
+
+    document.getElementById('new1').innerHTML=u1;
+    document.getElementById('new2').innerHTML=u2;
+    document.getElementById('new3').innerHTML=u3;
+
+
+
+
+</script>
+<script src="app.js"></script>
+
+
+</html>

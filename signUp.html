@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp-page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <form action="#" onsubmit=" return signup()">
+            <h1>SignUp Here</h1>
+            <table>
+                <tr>
+                    <td> Name:</td>
+                    <td>
+                        <input  required class="sinput" type="text" id="userName" placeholder="enter your name"><br>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Email:</td>
+                    <td>
+                        <input required class="sinput" type="text" id="userEmail" placeholder="enter your email"><br>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Password:</td>
+                    <td>
+                        <input required class="sinput" type="password" id="userpassword" placeholder="enter your password"><br>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                      <select  id="gender">
+                          <option value="Male">Male</option>
+                          <option value="Female">Female</option>
+                      </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Nationality:</td>
+                    <td>
+                      <select  id="Nationality">
+                          <option value="Indian">Indian</option>
+                          <option value="Pakistani">Pakistani</option>
+                          <option value="Saudi">Saudi</option>
+                      </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <button class="sinput">SignUp</button>
+
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
